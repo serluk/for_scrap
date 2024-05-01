@@ -1,0 +1,19 @@
+[
+  {
+    "url": "https://thedfirreport.com",
+    "links": "article > div > a",
+    "title": ".entry-title",
+    "text": ".entry-content",
+    "date": "time",
+    "image": "a > img"
+  },
+  {
+    "url": "https://code-white.com/blog/",
+    "links": ".blog-post_title",
+    "title": ".single-blog-post-content-wrapper > h1",
+    "text": ".single-blog-post-content-wrapper",
+    "date": ".article-header > div",
+    "format_date": "%b %d, %Y",
+    "image": "p > img"
+  }
+]
