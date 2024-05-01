@@ -15,5 +15,24 @@
     "date": ".article-header > div",
     "format_date": "%b %d, %Y",
     "image": "p > img"
+  },
+   {
+    "url": "https://www.reliaquest.com/blog/",
+    "links": ".col-md-6.col-lg-4.js-posts-item > a",
+    "title": ".hero-title.h2.text-white",
+    "text": ".main-content",
+    "date": ".time",
+    "image": ".img-holder > img"
+  },
+    {
+    "url": "https://blog.talosintelligence.com/",
+    "links": "h2 > a",
+    "title": ".text-center",
+    "text": ".post-content",
+    "date": ".time",
+    "format_date": "%b %d, %Y %H:%M",
+    "image": ".kg-card.kg-image-card > img",
+    "author": ".post-author"
   }
+
 ]
