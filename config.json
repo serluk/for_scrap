@@ -33,6 +33,16 @@
     "format_date": "%b %d, %Y %H:%M",
     "image": ".kg-card.kg-image-card > img",
     "author": ".post-author"
+  },
+    {
+    "url": "https://cert.pl/en/",
+    "links": "h4 > a",
+    "title": ".cert-title",
+    "text": ":is(.article, .warning)",
+    "date": ".cert-subtitle",
+    "regex_date": "\\d+ [a-zA-Z]+ \\d+",
+    "format_date": "%d %b %Y",
+    "image": "p > img"
   }
 
 ]
