@@ -1,5 +1,57 @@
 [
   {
+    "url": "https://sensepost.com/blog",
+    "links" : ".entry__heading > a",
+    "text" : ".article__content",
+    "title": ".article__heading",
+    "images" : ".wp-block-image > .aligncenter.size-full > a > img",
+    "author" : "null",
+    "author_regex" : "null",
+    "datetime" : ".article__date",
+    "datetime_regexp" : "\\d\\d [\\w]+ \\d\\d\\d\\d",
+    "datetime_format" : "%d %B %Y",
+    "tags": ".article__tags > a"
+  },
+  {
+    "url": "https://blog.compass-security.com",
+    "links" : ".post-title > a",
+    "text" : ".post-content",
+    "title": ".post-title > a",
+    "images" : ".wp-block-image > a img",
+    "author" : ".post-author > a:nth-child(1)",
+    "author_regex" : "null",
+    "datetime" : ".post-date > a:nth-child(1)",
+    "datetime_regexp" : "null",
+    "datetime_format" : "%B %d, %Y",
+     "tags": ".post-tags > [rel=tag]"
+  },
+  {
+    "url": "https://www.zerodayinitiative.com/blog",
+    "links" : "h2.title > a",
+    "text" : ".sqs-block-content",
+    "title": ".title",
+    "images" : ".image-block-wrapper > .sqs-image-shape-container-element.has-aspect-ratio > img",
+    "author" : "data",
+    "author_regex" : "\\| (.*)",
+    "datetime" : "data",
+    "datetime_regexp" : "(.*) \\|",
+    "datetime_format" : "%B %d, %Y" ,
+    "tags": ".blog-tags"
+  },
+  {
+    "url": "https://blog.nviso.eu",
+    "links" : ".entry-title > a",
+    "text" : ".entry-content",
+    "title": ".entry-title",
+    "images" : ":is(.wp-block-image > img, .wp-block-image > figure img)",
+    "author" : ".byline > a:nth-child(1)",
+    "author_regex" : "null",
+    "datetime" : "time",
+    "datetime_regexp" : "null",
+    "datetime_format" : "null",
+    "tags": ".post-tags.light-text > li"
+  },
+  {
     "url": "https://thedfirreport.com",
     "links": "article > div > a",
     "title": ".entry-title",
@@ -16,7 +68,7 @@
     "format_date": "%b %d, %Y",
     "image": "p > img"
   },
-   {
+  {
     "url": "https://www.reliaquest.com/blog/",
     "links": ".col-md-6.col-lg-4.js-posts-item > a",
     "title": ".hero-title.h2.text-white",
@@ -24,7 +76,7 @@
     "date": ".time",
     "image": ".img-holder > img"
   },
-    {
+  {
     "url": "https://blog.talosintelligence.com/",
     "links": "h2 > a",
     "title": ".text-center",
@@ -34,7 +86,7 @@
     "image": ".kg-card.kg-image-card > img",
     "author": ".post-author"
   },
-    {
+  {
     "url": "https://cert.pl/en/",
     "links": "h4 > a",
     "title": ".cert-title",
@@ -43,6 +95,17 @@
     "regex_date": "\\d+ [a-zA-Z]+ \\d+",
     "format_date": "%d %b %Y",
     "image": "p > img"
+  },
+  {
+    "url": "https://www.wiz.io/blog",
+    "links": "section > div > div > div > article > a",
+    "title": "div > h1",
+    "text": "article > div",
+    "date": ".time",
+    "regex_date": "null",
+    "format_date": "null",
+    "image": "picture > img",
+    "author": ".font-medium.text-gray-black",
+    "tags": "null"
   }
-
 ]
